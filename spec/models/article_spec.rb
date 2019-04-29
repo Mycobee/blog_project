@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe Article, type: :model do
     describe 'validations' do
-        it {should validate presence of :title}
-        it {should validate presence of :body}
+        it {should validate_presence_of(:title)}
+        it {should validate_presence_of(:body)}
     end
 end
